@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T22:39:32.947Z",
+  "generated": "2026-09-20T23:42:18.595Z",
   "source": "https://github.com/abderhmenlaroussi",
   "repos": [
     {
@@ -7,8 +7,17 @@
       "desc": "Personal portfolio website — single-file HTML/CSS/JS with GitHub auto-sync.",
       "url": "https://github.com/abderhmenlaroussi/portfolio",
       "lang": "HTML",
-      "updated": "2026-09-20T22:39:19Z",
+      "updated": "2026-09-20T23:42:07Z",
       "category": "web",
+      "descAuto": true
+    },
+    {
+      "name": "abderhmenlaroussi",
+      "desc": "I'm a software engineering student passionate about software development, web technologies, and problem solving . I enjoy building projects, learning new technologies, and turning ideas into…",
+      "url": "https://github.com/abderhmenlaroussi/abderhmenlaroussi",
+      "lang": "",
+      "updated": "2026-09-20T23:34:42Z",
+      "category": "software",
       "descAuto": true
     },
     {
