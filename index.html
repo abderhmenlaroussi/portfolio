@@ -523,7 +523,18 @@
       box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
       backdrop-filter: blur(6px);
       overflow: hidden;
-      transform: rotate(-1.5deg);
+      animation: card-float 6s ease-in-out infinite;
+      will-change: transform;
+    }
+    @keyframes card-float {
+      0%, 100% {
+        transform: translateY(0) rotate(-1.5deg);
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+      }
+      50% {
+        transform: translateY(-14px) rotate(-0.4deg);
+        box-shadow: 0 46px 92px rgba(0, 0, 0, 0.55);
+      }
     }
     .code-card__bar {
       display: flex;
@@ -589,6 +600,11 @@
       background: radial-gradient(circle, rgba(200, 16, 46, 0.55), transparent 70%);
       border-radius: 50%;
       z-index: -1;
+      animation: glow-breathe 8s ease-in-out infinite;
+    }
+    @keyframes glow-breathe {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50%      { transform: scale(1.16); opacity: 1; }
     }
 
     .scroll-hint {
