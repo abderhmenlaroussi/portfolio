@@ -1,0 +1,50 @@
+# Automatically keeps `projects.json` in sync with the GitHub repositories
+# of a user account. The portfolio consumes `projects.json` directly, so
+# visitors never hit GitHub's API rate limits.
+#
+# Triggers:
+#   - every 4 hours            → picks up new/edited repositories
+#   - on push to main/master   → re-syncs when the site itself changes
+#   - manual "Run workflow"    → "Sync now" from the Actions tab
+#
+# Usage: put this file in your portfolio repository at
+#   .github/workflows/sync-projects.yml
+# and keep `generate-projects.mjs` at the repository root.
+name: Sync GitHub projects
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # every 4 hours
+  workflow_dispatch: {} # manual "Sync now" trigger
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write # needed to commit the updated projects.json
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate projects.json from GitHub API
+        run: node generate-projects.mjs
+        env:
+          GH_USER: abderhmenlaroussi
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit projects.json if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet projects.json || {
+            git commit -m "chore: sync GitHub projects [skip ci]" projects.json
+            git push
+          }

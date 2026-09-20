@@ -1,0 +1,30 @@
+{
+  "generated": "2026-09-20T22:01:26.934Z",
+  "source": "https://github.com/abderhmenlaroussi",
+  "repos": [
+    {
+      "name": "active",
+      "desc": "",
+      "url": "https://github.com/abderhmenlaroussi/active",
+      "lang": "",
+      "updated": "2026-09-20T21:11:05Z",
+      "category": "software"
+    },
+    {
+      "name": "-GestRH-Gestion-des-Employ-s",
+      "desc": "Application de gestion du personnel en fichier texte : ajout d'un employé (nom, prénom, nombre d'enfants), recherche par prénom, affichage des employés ayant n enfants ou plus, et suppression des employés sans enfant.",
+      "url": "https://github.com/abderhmenlaroussi/-GestRH-Gestion-des-Employ-s",
+      "lang": "",
+      "updated": "2026-09-03T22:40:30Z",
+      "category": "software"
+    },
+    {
+      "name": "test",
+      "desc": "",
+      "url": "https://github.com/abderhmenlaroussi/test",
+      "lang": "C",
+      "updated": "2026-05-09T23:13:39Z",
+      "category": "software"
+    }
+  ]
+}
