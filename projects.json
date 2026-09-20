@@ -1,22 +1,24 @@
 {
-  "generated": "2026-09-20T22:13:41.506Z",
+  "generated": "2026-09-20T22:17:45.283Z",
   "source": "https://github.com/abderhmenlaroussi",
   "repos": [
     {
       "name": "portfolio",
-      "desc": "",
+      "desc": "Personal portfolio website — single-file HTML/CSS/JS with GitHub auto-sync.",
       "url": "https://github.com/abderhmenlaroussi/portfolio",
       "lang": "HTML",
-      "updated": "2026-09-20T22:13:26Z",
-      "category": "web"
+      "updated": "2026-09-20T22:13:42Z",
+      "category": "web",
+      "descAuto": true
     },
     {
       "name": "active",
-      "desc": "",
+      "desc": "Documentation-only repository (README).",
       "url": "https://github.com/abderhmenlaroussi/active",
       "lang": "",
       "updated": "2026-09-20T21:11:05Z",
-      "category": "software"
+      "category": "software",
+      "descAuto": true
     },
     {
       "name": "-GestRH-Gestion-des-Employ-s",
@@ -28,11 +30,12 @@
     },
     {
       "name": "test",
-      "desc": "",
+      "desc": "10+ C files, Makefile build.",
       "url": "https://github.com/abderhmenlaroussi/test",
       "lang": "C",
       "updated": "2026-05-09T23:13:39Z",
-      "category": "software"
+      "category": "software",
+      "descAuto": true
     }
   ]
 }
