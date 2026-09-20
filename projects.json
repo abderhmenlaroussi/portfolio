@@ -1,7 +1,15 @@
 {
-  "generated": "2026-09-20T22:01:26.934Z",
+  "generated": "2026-09-20T22:13:41.506Z",
   "source": "https://github.com/abderhmenlaroussi",
   "repos": [
+    {
+      "name": "portfolio",
+      "desc": "",
+      "url": "https://github.com/abderhmenlaroussi/portfolio",
+      "lang": "HTML",
+      "updated": "2026-09-20T22:13:26Z",
+      "category": "web"
+    },
     {
       "name": "active",
       "desc": "",
